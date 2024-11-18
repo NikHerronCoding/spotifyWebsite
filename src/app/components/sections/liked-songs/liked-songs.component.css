@@ -1,0 +1,120 @@
+/* General Settings */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.liked-songs-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 400px; /* Fixed height */
+  background-color: #181818;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensures content doesn't break out */
+}
+.liked-songs-title {
+  font-size: 3rem;
+  color:#b3b3b3;
+}
+/* Header Styling */
+.header {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load-button {
+  background-color: #1db954;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.load-button:hover {
+  background-color: #1ed760;
+}
+
+/* Songs List */
+.songs-list {
+  flex-grow: 1;
+  overflow-y: auto; /* Allows scrolling within the list */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  background-color: #282828;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.song-item:hover {
+  background-color: #383838;
+}
+
+.album-art {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.song-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.song-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b3b3b3;
+  margin: 0 0 4px 0;
+}
+
+.song-name:hover {
+  color: #1db954;
+}
+
+.song-artist {
+  font-size: 12px;
+  color: #808080;
+  margin: 4px 0 0 0;
+}
+
+.song-meta {
+  font-size: 12px;
+  color: #b3b3b3;
+  text-align: right;
+}
+
+.no-items {
+  text-align: center;
+  color: #b3b3b3;
+  padding: 20px;
+}

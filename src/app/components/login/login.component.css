@@ -1,0 +1,40 @@
+/* src/app/components/login/login.component.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #1db954; /* Spotify green background */
+    color: #ffffff;
+  }
+  
+  .login-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .login-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1db954;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #f1f1f1;
+  }
+  
